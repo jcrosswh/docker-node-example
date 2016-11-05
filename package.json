@@ -1,0 +1,14 @@
+{
+  "name": "blog-api",
+  "version": "1.0.0",
+  "description": "Sample blog API using Node.js.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Joel Crosswhite <jcrosswhite@arrow.com>",
+  "license": "ISC",
+  "dependencies": {
+    "strongloop": "^6.0.3"
+  }
+}
