@@ -1,0 +1,40 @@
+{
+  "name": "order",
+  "plural": "orders",
+  "base": "PersistedModel",
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true,
+    "mysql": {
+      "table": "orders"
+    }
+  },
+  "properties": {
+    "id": {
+      "type": "number",
+      "required": true,
+      "generated": true,
+      "mysql": {
+        "columnName": "order_id"
+      }
+    },
+    "customerId": {
+      "type": "number",
+      "required": true,
+      "mysql": {
+        "columnName": "customer_id"
+      }
+    },
+    "date": {
+      "type": "date",
+      "required": true,
+      "mysql": {
+        "columnName": "order_date"
+      }
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

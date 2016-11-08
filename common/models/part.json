@@ -1,0 +1,54 @@
+{
+  "name": "part",
+  "plural": "parts",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true,
+    "mysql": {
+      "table": "parts"
+    }
+  },
+  "properties": {
+    "id": {
+      "type": "number",
+      "required": true,
+      "generated": true,
+      "id": true,
+      "mysql": {
+        "columnName": "part_id"
+      }
+    },
+    "supplierId": {
+      "type": "number",
+      "required": true,
+      "mysql": {
+        "columnName": "supplier_id"
+      }
+    },
+    "name": {
+      "type": "string",
+      "required": true,
+      "mysql": {
+        "columnName": "part_name"
+      }
+    },
+    "description": {
+      "type": "string",
+      "required": false,
+      "mysql": {
+        "columnName": "part_description"
+      }
+    },
+    "price": {
+      "type": "number",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+  },
+  "acls": [],
+  "methods": {
+  }
+}

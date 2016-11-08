@@ -32,8 +32,24 @@
     "dataSource": "db",
     "public": false
   },
-  "person": {
-    "dataSource": "db",
+  "customer": {
+    "dataSource": "mainDS",
+    "public": true
+  },
+  "supplier": {
+    "dataSource": "mainDS",
+    "public": true
+  },
+  "part": {
+    "dataSource": "mainDS",
+    "public": true
+  },
+  "order": {
+    "dataSource": "mainDS",
+    "public": true
+  },
+  "orderPart": {
+    "dataSource": "mainDS",
     "public": true
   }
 }

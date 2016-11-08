@@ -1,0 +1,41 @@
+{
+  "name": "orderPart",
+  "plural": "orderParts",
+  "base": "PersistedModel",
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true,
+    "mysql": {
+      "table": "orders_parts_xref"
+    }
+  },
+  "properties": {
+    "orderId": {
+      "type": "number",
+      "required": true,
+      "id": 1,
+      "mysql": {
+        "columnName": "order_id"
+      }
+    },
+    "partId": {
+      "type": "number",
+      "required": true,
+      "id": 2,
+      "mysql": {
+        "columnName": "part_id"
+      }
+    },
+    "quantity": {
+      "type": "number",
+      "required": true,
+      "mysql": {
+        "columnName": "order_quantity"
+      }
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
