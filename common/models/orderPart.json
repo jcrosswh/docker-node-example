@@ -12,16 +12,16 @@
   "properties": {
     "orderId": {
       "type": "number",
-      "required": true,
       "id": 1,
+      "required": true,
       "mysql": {
         "columnName": "order_id"
       }
     },
     "partId": {
       "type": "number",
-      "required": true,
       "id": 2,
+      "required": true,
       "mysql": {
         "columnName": "part_id"
       }

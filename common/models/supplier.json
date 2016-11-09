@@ -12,9 +12,9 @@
   "properties": {
     "id": {
       "type": "number",
-      "required": true,
-      "generated": true,
       "id": true,
+      "generated": true,
+      "required": true,
       "mysql": {
         "columnName": "supplier_id"
       }

@@ -12,8 +12,9 @@
   "properties": {
     "id": {
       "type": "number",
-      "required": true,
       "generated": true,
+      "required": true,
+      "id": true,
       "mysql": {
         "columnName": "order_id"
       }
@@ -34,7 +35,14 @@
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "parts": {
+      "type": "hasMany",
+      "model": "part",
+      "foreignKey": "orderId",
+      "through": "orderPart"
+    }
+  },
   "acls": [],
   "methods": {}
 }
