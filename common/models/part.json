@@ -7,6 +7,10 @@
     "validateUpsert": true,
     "mysql": {
       "table": "parts"
+    },
+    "oracle": {
+      "schema": "XXECS_PRTL",
+      "table": "JC_PARTS"
     }
   },
   "properties": {
@@ -17,6 +21,9 @@
       "required": true,
       "mysql": {
         "columnName": "part_id"
+      },
+      "oracle": {
+        "columnName": "PART_ID"
       }
     },
     "supplierId": {
@@ -24,6 +31,9 @@
       "required": true,
       "mysql": {
         "columnName": "supplier_id"
+      },
+      "oracle": {
+        "columnName": "SUPPLIER_ID"
       }
     },
     "name": {
@@ -31,6 +41,9 @@
       "required": true,
       "mysql": {
         "columnName": "part_name"
+      },
+      "oracle": {
+        "columnName": "PART_NAME"
       }
     },
     "description": {
@@ -38,11 +51,17 @@
       "required": false,
       "mysql": {
         "columnName": "part_description"
+      },
+      "oracle": {
+        "columnName": "PART_DESCRIPTION"
       }
     },
     "price": {
       "type": "number",
-      "required": true
+      "required": true,
+      "oracle": {
+        "columnName": "PRICE"
+      }
     }
   },
   "validations": [],

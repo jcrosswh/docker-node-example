@@ -7,6 +7,10 @@
     "validateUpsert": true,
     "mysql": {
       "table": "customers"
+    },
+    "oracle": {
+      "schema": "XXECS_PRTL",
+      "table": "JC_CUSTOMERS"
     }
   },
   "properties": {
@@ -17,6 +21,9 @@
       "required": true,
       "mysql": {
         "columnName": "customer_id"
+      },
+      "oracle": {
+        "columnName": "CUSTOMER_ID"
       }
     },
     "name": {
@@ -24,6 +31,9 @@
       "required": true,
       "mysql": {
         "columnName": "customer_name"
+      },
+      "oracle": {
+        "columnName": "CUSTOMER_NAME"
       }
     }
   },

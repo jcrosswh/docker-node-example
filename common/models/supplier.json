@@ -7,6 +7,10 @@
     "validateUpsert": true,
     "mysql": {
       "table": "suppliers"
+    },
+    "oracle": {
+      "schema": "XXECS_PRTL",
+      "table": "JC_SUPPLIERS"
     }
   },
   "properties": {
@@ -17,6 +21,9 @@
       "required": true,
       "mysql": {
         "columnName": "supplier_id"
+      },
+      "oracle": {
+        "columnName": "SUPPLIER_ID"
       }
     },
     "name": {
@@ -24,6 +31,9 @@
       "required": true,
       "mysql": {
         "columnName": "supplier_name"
+      },
+      "oracle": {
+        "columnName": "SUPPLIER_NAME"
       }
     }
   },

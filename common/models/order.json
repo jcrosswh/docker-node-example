@@ -7,6 +7,10 @@
     "validateUpsert": true,
     "mysql": {
       "table": "orders"
+    },
+    "oracle": {
+      "schema": "XXECS_PRTL",
+      "table": "JC_ORDERS"
     }
   },
   "properties": {
@@ -17,6 +21,9 @@
       "id": true,
       "mysql": {
         "columnName": "order_id"
+      },
+      "oracle": {
+        "columnName": "ORDER_ID"
       }
     },
     "customerId": {
@@ -24,6 +31,9 @@
       "required": true,
       "mysql": {
         "columnName": "customer_id"
+      },
+      "oracle": {
+        "columnName": "CUSTOMER_ID"
       }
     },
     "date": {
@@ -31,6 +41,9 @@
       "required": true,
       "mysql": {
         "columnName": "order_date"
+      },
+      "oracle": {
+        "columnName": "ORDER_DATE"
       }
     }
   },

@@ -33,23 +33,23 @@
     "public": false
   },
   "customer": {
-    "dataSource": "mainDS",
+    "dataSource": "ecsdev",
     "public": true
   },
   "supplier": {
-    "dataSource": "mainDS",
+    "dataSource": "ecsdev",
     "public": true
   },
   "part": {
-    "dataSource": "mainDS",
+    "dataSource": "ecsdev",
     "public": true
   },
   "order": {
-    "dataSource": "mainDS",
+    "dataSource": "ecsdev",
     "public": true
   },
   "orderPart": {
-    "dataSource": "mainDS",
+    "dataSource": "ecsdev",
     "public": true
   }
 }

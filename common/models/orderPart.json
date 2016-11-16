@@ -7,6 +7,10 @@
     "validateUpsert": true,
     "mysql": {
       "table": "orders_parts_xref"
+    },
+    "oracle": {
+      "schema": "XXECS_PRTL",
+      "table": "JC_ORDERS_PARTS_XREF"
     }
   },
   "properties": {
@@ -16,6 +20,9 @@
       "required": true,
       "mysql": {
         "columnName": "order_id"
+      },
+      "oracle": {
+        "columnName": "ORDER_ID"
       }
     },
     "partId": {
@@ -24,6 +31,9 @@
       "required": true,
       "mysql": {
         "columnName": "part_id"
+      },
+      "oracle": {
+        "columnName": "PART_ID"
       }
     },
     "quantity": {
@@ -31,6 +41,9 @@
       "required": true,
       "mysql": {
         "columnName": "order_quantity"
+      },
+      "oracle": {
+        "columnName": "ORDER_QUANTITY"
       }
     }
   },
