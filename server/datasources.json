@@ -1,0 +1,13 @@
+{
+  "db": {
+    "name": "db",
+    "connector": "memory"
+  },
+  "ecsdev": {
+    "connector": "oracle",
+    "tns": "${TNS_NAME}",
+    "username": "${DB_USERNAME}",
+    "password": "${DB_PASSWORD}",
+    "stmtCacheSize": 500
+  }
+}

@@ -15,8 +15,9 @@
     "loopback-boot": "^2.6.5",
     "loopback-component-explorer": "^2.4.0",
     "loopback-connector-mysql": "^2.4.0",
-    "loopback-connector-oracle": "^2.5.0",
+    "loopback-connector-oracle": "git+https://github.com/strongloop/loopback-connector-oracle.git#5ac12ea",
     "loopback-datasource-juggler": "^2.39.0",
+    "oracledb": "^1.11.0",
     "serve-favicon": "^2.0.1",
     "strong-error-handler": "^1.0.1"
   },
