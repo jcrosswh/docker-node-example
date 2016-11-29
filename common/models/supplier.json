@@ -19,6 +19,7 @@
       "id": true,
       "generated": true,
       "required": true,
+      "forceId": true,
       "mysql": {
         "columnName": "supplier_id"
       },
