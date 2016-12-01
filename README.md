@@ -32,6 +32,7 @@ To obtain this application and run it locally, you must have the
 following dependencies installed:
 - Node.js
 - Oracle Instant Client
+
 This application has been built and tested with Node v4.4.7,
 but version 6 should work (just hasn't been tested.)  Once Node is
 installed, run:
