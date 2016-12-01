@@ -17,15 +17,29 @@ our deployment process.
 - Deployable using Docker
 
 ## Installation
+### Configuration
+When building this project, either locally or using Docker, you will
+need a valid tnsnames.ora file located at the root of the project and
+an environment file for connecting to an Oracle database.  The format
+of the environment file should be:
+```
+TNS_NAME=<tnsname>
+DB_USERNAME=<username>
+DB_PASSWORD=<password>
+```
 ### Running Locally
-To obtain this application and run it locally, you must have Node.js
-installed.  This application has been built and tested with Node v4.4.7,
+To obtain this application and run it locally, you must have the
+following dependencies installed:
+- Node.js
+- Oracle Instant Client
+This application has been built and tested with Node v4.4.7,
 but version 6 should work (just hasn't been tested.)  Once Node is
 installed, run:
 ```bash
 $ git clone git@github.com:jcrosswhite-arrow/docker-node-example.git
 $ cd docker-node-example
 $ npm install
+$ source <environment file>
 $ node .
 ```
 This will start an Express server running locally on port 3000.  Browse
@@ -42,7 +56,7 @@ $ docker build -t my-dockerhub-username/docker-node-example .
 
 Then, to run the application:
 ```bash
-$ docker run -p <external port>:3000 my-dockerhub-username/docker-node-example
+$ docker run -p <external port>:3000 --env-file=<environment file> my-dockerhub-username/docker-node-example
 ```
 
 ## License
